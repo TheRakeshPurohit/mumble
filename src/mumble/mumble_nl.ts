@@ -432,35 +432,35 @@ Deze waarde laat je toe om een maximum aantal gebruikers in te stellen voor het 
     </message>
     <message>
         <source>Channel position</source>
-        <translation type="unfinished"></translation>
+        <translation>Kanaalpositie</translation>
     </message>
     <message>
         <source>Channel maximum users</source>
-        <translation type="unfinished"></translation>
+        <translation>Maximaal aantal kanaal gebruikers</translation>
     </message>
     <message>
         <source>Channel description</source>
-        <translation type="unfinished"></translation>
+        <translation>Kanaalbeschrijving</translation>
     </message>
     <message>
         <source>Select member to add</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer lid om toe te voegen</translation>
     </message>
     <message>
         <source>Excluded group members</source>
-        <translation type="unfinished"></translation>
+        <translation>Uitgesloten groepsleden</translation>
     </message>
     <message>
         <source>Select member to remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer lid om te verwijderen</translation>
     </message>
     <message>
         <source>List of access control list entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Lijst van toegangscontrole invoeringen</translation>
     </message>
     <message>
         <source>Select group</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer groep</translation>
     </message>
     <message>
         <source>Selects a group this ACL entry applies to. Selecting a group and selecting a user are mutually exclusive.</source>
@@ -468,7 +468,7 @@ Deze waarde laat je toe om een maximum aantal gebruikers in te stellen voor het 
     </message>
     <message>
         <source>Select user</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer gebruiker</translation>
     </message>
     <message>
         <source>Selects a user this ACL entry applies to. Selecting a group and selecting a user are mutually exclusive.</source>
@@ -629,19 +629,19 @@ Deze waarde laat je toe om een maximum aantal gebruikers in te stellen voor het 
     </message>
     <message>
         <source>Device list</source>
-        <translation type="unfinished"></translation>
+        <translation>Apparatenlijst</translation>
     </message>
     <message>
         <source>Move from unused to microphone list</source>
-        <translation type="unfinished"></translation>
+        <translation>Verander van ongebruikt naar microfoonlijst</translation>
     </message>
     <message>
         <source>Move from microphone to unused list</source>
-        <translation type="unfinished"></translation>
+        <translation>Verander van Microfoonlijst naar ongebruikt</translation>
     </message>
     <message>
         <source>List of unused devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Lijst van ongebruikte apparaten</translation>
     </message>
     <message>
         <source>Move from unused to speakers list</source>
@@ -851,10 +851,6 @@ Deze waarde laat je toe om een maximum aantal gebruikers in te stellen voor het 
     <message>
         <source>&lt;b&gt;This selects how many audio frames should be put in one packet.&lt;/b&gt;&lt;br /&gt;Increasing this will increase the latency of your voice, but will also reduce bandwidth requirements.</source>
         <translation>&lt;b&gt;Selecteert hoeveel geluidsframes in één pakketje moeten komen.&lt;/b&gt;&lt;br /&gt;Dit verhogen, verhoogt de spraaklatentie maar vermindert vereiste bandbreedte.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;This shows peak outgoing bandwidth used.&lt;/b&gt;&lt;br /&gt;This shows the peak amount of bandwidth sent out from your machine. Audio bitrate is the maximum bitrate (as we use VBR) for the audio data alone. Position is the bitrate used for positional information. Overhead is our framing and the IP packet headers (IP and UDP is 75% of this overhead).</source>
-        <translation>&lt;b&gt;Dit geeft de piek van uitgaande bandbreedte aan.&lt;/b&gt;&lt;br /&gt;Dit geeft de piek van bandbreedte aan die van op je computer uitgestuurd werd. De bitsnelheid van het geluid is het maximum (gezien we gebruikmaken van een variabele bitsnelheid) dat gebruikt wordt voor (enkel) geluidsdata. De positie betreft de bitsnelheid die gebruikt wordt voor positionele informatie. De overhead beschrijft onze framedata en de bijkomende encapsulatie van IP-pakketten (IP met UDP vormt 75% van deze overhead).</translation>
     </message>
     <message>
         <source>Audio Processing</source>
@@ -1230,6 +1226,10 @@ Deze waarde laat je toe om een maximum aantal gebruikers in te stellen voor het 
     </message>
     <message>
         <source>Preview both audio cues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;This shows peak outgoing bandwidth used.&lt;/b&gt;&lt;br /&gt;This shows the peak amount of bandwidth sent out from your machine. Audio bitrate is the maximum bitrate for the audio data alone. Position is the bitrate used for positional information. Overhead is our framing and the IP packet headers (IP and UDP is 75% of this overhead).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1840,8 +1840,8 @@ Deze waarde laat je toe om een maximum aantal gebruikers in te stellen voor het 
         <translation>Dit toont de gewichten van de echo-opheffer, met een stijgende tijd in neerwaartse richting en een stijgende frequentie in zijwaartse richting (naar rechts).&lt;br /&gt;Idealiter is dit zwart, wat aangeeft dat er geen echo is. Je hebt normaliter één of ↑ blauwe horizontale strepen die galmvertragingsduur aanduidt. Real-time zijn beide gewichten bijgewerkt te zien.&lt;br /&gt;Zolang je geen galmveroorzaker hebt zie je geen nuttige gegevens. Speel muziek af want dat stabiliseert.&lt;br /&gt;Kies voor echte of ingebeelde delen v.h. frequentiegewichten-deel of berekende modulus en fase bekijken. Modulus, zijnde galmsterkte; toont je hoeveel uitgaand signaal wordt verwijderd. Andere weergave-modi zijn vooral bedoeld voor degenen de galm-algoritmen trachten af te stellen.&lt;br /&gt;Als het beeld erg fluctueert, terwijl in modulus-modus en echo-opheffer faalt om verband te detecteren tussen twee invoerbronnen (microfoon en luidsprekers) dan is er sprake galmvertraging/foute invoerbron.</translation>
     </message>
     <message>
-        <source>This is the audio bitrate of the last compressed frame (20 ms), and as such will jump up and down as the VBR adjusts the quality. The peak bitrate can be adjusted in the Settings dialog.</source>
-        <translation>Geluidsbitsnelheid laatst gecomprimeerd frame springt zodanig op en neer terwijl de VBR de kwaliteit aanpast. Bitsnelheidspiek aanpasbaar in het Instellingenvenster.</translation>
+        <source>This is the audio bitrate of the last compressed frame (20 ms). The peak bitrate can be adjusted in the Settings dialog.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
