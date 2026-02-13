@@ -3,10 +3,10 @@
 	"repoOwner": "mumble-voip",
 	"targetBranchChoices": [
 		{
-			"name": "1.5.x",
+			"name": "1.6.x",
 			"checked": true
 		},
-		"1.4.x"
+		"1.5.x"
 	],
 	"targetPRLabels": [
 		"backport"
