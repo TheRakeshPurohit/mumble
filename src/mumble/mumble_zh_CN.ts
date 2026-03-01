@@ -6246,19 +6246,19 @@ The setting only applies for new messages, the already shown ones will retain th
     </message>
     <message>
         <source>According to the server&apos;s configuration, your username is considered invalid.</source>
-        <translation type="unfinished"></translation>
+        <translation>根据服务器配置，您的用户名无效。</translation>
     </message>
     <message>
         <source>Denied: According to the server&apos;s configuration, the channel name is considered invalid.</source>
-        <translation type="unfinished"></translation>
+        <translation>被拒绝：根据服务器配置，频道名无效。</translation>
     </message>
     <message>
         <source>According to the server&apos;s configuration, the username %1 is considered invalid.</source>
-        <translation type="unfinished"></translation>
+        <translation>根据服务器配置，用户名 %1 无效。</translation>
     </message>
     <message>
         <source>According to the server&apos;s configuration, the username is considered invalid.</source>
-        <translation type="unfinished"></translation>
+        <translation>根据服务器配置，用户名无效。</translation>
     </message>
     <message>
         <source>You moved %1 to %2.</source>
