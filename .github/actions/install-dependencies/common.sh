@@ -152,9 +152,9 @@ configure_database_tables() {
 	while [[ "$#" -gt 0 ]]; do
 		case "$1" in
 			"mysql")
-				local sql_statements="CREATE DATABASE mumble_test_db;"
-				sql_statements+="CREATE USER 'mumble_test_user'@'localhost' IDENTIFIED BY 'MumbleTestPassword';"
-				sql_statements+="GRANT ALL PRIVILEGES ON mumble_test_db.* TO 'mumble_test_user'@'localhost';"
+				local sql_statements='CREATE DATABASE `mumble_test-db`;'
+				sql_statements+="CREATE USER 'mumble_test-user'@'localhost' IDENTIFIED BY 'MumbleTestPassword';"
+				sql_statements+="GRANT ALL PRIVILEGES ON \`mumble_test-db\`.* TO 'mumble_test-user'@'localhost';"
 
 				if $sudo_cmd mysql --user=root -e "SELECT 1" 2> /dev/null; then
 					# Passwordless
@@ -167,9 +167,9 @@ configure_database_tables() {
 				;;
 
 			"postgresql")
-				local sql_statements="CREATE DATABASE mumble_test_db;"
-				sql_statements+="CREATE USER mumble_test_user ENCRYPTED PASSWORD 'MumbleTestPassword';"
-				sql_statements+="ALTER DATABASE mumble_test_db OWNER TO mumble_test_user;"
+				local sql_statements='CREATE DATABASE "mumble_test-db";'
+				sql_statements+="CREATE USER \"mumble_test-user\" ENCRYPTED PASSWORD 'MumbleTestPassword';"
+				sql_statements+='ALTER DATABASE "mumble_test-db" OWNER TO "mumble_test-user";'
 
 				if [[ -n "$sudo_cmd" ]] && id -u postgres > /dev/null 1>&1; then
 					# User postgres exists and we can use sudo to execute commands as that user
