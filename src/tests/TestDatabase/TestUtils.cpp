@@ -78,22 +78,22 @@ namespace db {
 			const mumble::db::ConnectionParameter &getConnectionParamter(mumble::db::Backend backend) {
 				switch (backend) {
 					case mumble::db::Backend::SQLite: {
-						static mumble::db::SQLiteConnectionParameter param("mumble_test_db");
+						static mumble::db::SQLiteConnectionParameter param("mumble_test-db");
 
 						return param;
 					}
 					case mumble::db::Backend::MySQL: {
-						static mumble::db::MySQLConnectionParameter param("mumble_test_db");
+						static mumble::db::MySQLConnectionParameter param("mumble_test-db");
 
-						param.userName = "mumble_test_user";
+						param.userName = "mumble_test-user";
 						param.password = "MumbleTestPassword";
 
 						return param;
 					}
 					case mumble::db::Backend::PostgreSQL: {
-						static mumble::db::PostgreSQLConnectionParameter param("mumble_test_db");
+						static mumble::db::PostgreSQLConnectionParameter param("mumble_test-db");
 
-						param.userName = "mumble_test_user";
+						param.userName = "mumble_test-user";
 						param.password = "MumbleTestPassword";
 
 						return param;

@@ -16,19 +16,19 @@ necessary privileges. On standard Ubuntu installations, this is most easily acco
 
 ### MySQL
 
-1. Create a database with the name `mumble_test_db`:
+1. Create a database with the name `mumble_test-db`:
 ```sql
-CREATE DATABASE mumble_test_db;
+CREATE DATABASE `mumble_test-db`;
 ```
 
-2. Create a new user with the name `mumble_test_user` and password `MumbleTestPassword`
+2. Create a new user with the name `mumble_test-user` and password `MumbleTestPassword`
 ```sql
-CREATE USER 'mumble_test_user'@'localhost' IDENTIFIED BY 'MumbleTestPassword';
+CREATE USER 'mumble_test-user'@'localhost' IDENTIFIED BY 'MumbleTestPassword';
 ```
 
 3. Grant this new user all privileges on the test database:
 ```sql
-GRANT ALL PRIVILEGES ON mumble_test_db.* TO 'mumble_test_user'@'localhost';
+GRANT ALL PRIVILEGES ON `mumble_test-db`.* TO 'mumble_test-user'@'localhost';
 ```
 
 4. Enable `log-bin-trust-function-creators` as otherwise creating triggers and stored functions would require global `SUPER` privilege for the Mumble
@@ -44,18 +44,18 @@ log-bin-trust-function-creators = 1
 
 ### PostgreSQL
 
-1. Create a database with the name `mumble_test_db`:
+1. Create a database with the name `mumble_test-db`:
 ```sql
-CREATE DATABASE mumble_test_db;
+CREATE DATABASE "mumble_test-db";
 ```
 
-2. Create a new user with the name `mumble_test_user` and password `MumbleTestPassword`
+2. Create a new user with the name `mumble_test-user` and password `MumbleTestPassword`
 ```sql
-CREATE USER mumble_test_user ENCRYPTED PASSWORD 'MumbleTestPassword';
+CREATE USER "mumble_test-user" ENCRYPTED PASSWORD 'MumbleTestPassword';
 ```
 
 3. Grant this new user all privileges on the test database:
 ```sql
-ALTER DATABASE mumble_test_db OWNER TO mumble_test_user;
+ALTER DATABASE "mumble_test-db" OWNER TO "mumble_test-user";
 ```
 
